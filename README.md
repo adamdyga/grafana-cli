@@ -9,6 +9,7 @@ In case the server cannot respond with metrices, the CLI interpolates the respon
 Work in progress.
 
 It produces charts like that:
+```
 > profile-service-v1 (rp/120sec)
     +----+------------+------------+-----------+------------+--+
 120 +                                                     *    +
