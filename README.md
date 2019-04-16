@@ -7,3 +7,22 @@ Instead of replicating PromQL to the servers, the command line agent uses local 
 In case the server cannot respond with metrices, the CLI interpolates the response and fills gaps.
 
 Work in progress.
+
+It produces charts like that:
+> profile-service-v1 (rp/120sec)
+    +----+------------+------------+-----------+------------+--+
+120 +                                                     *    +
+    |                                                          |
+100 +                                                          +
+    |                                                     * *  |
+ 80 +                           *         *                    +
+    |                                        *       *    *    |
+ 60 +                           *              *               +
+    |                              *    * *    *       *       |
+ 40 +                         *      *  * *  *                 +
+    |                 *       * *    *  *    * *               |
+ 20 +         *       *  * *  * *  *                           +
+    |            *    *  * *                                   |
+    |  *      *    *                                           |
+  0 +----+------------+------------+-----------+------------+--+
+         5           10           15          20           25  
